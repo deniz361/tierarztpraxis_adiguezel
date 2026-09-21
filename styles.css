@@ -1980,6 +1980,10 @@ svg {
     padding-top: 42px;
   }
 
+  .hero h1 {
+    font-size: clamp(2rem, 11vw, 3.5rem);
+  }
+
   .hero-lead {
     font-size: 1.05rem;
   }
@@ -2108,3 +2112,9 @@ svg {
     transform: none;
   }
 }
+
+ @media (max-width: 600px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }

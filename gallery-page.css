@@ -50,26 +50,6 @@
   font-size: 1.05rem;
 }
 
-.album-jump-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 24px;
-  margin-bottom: clamp(56px, 7vw, 88px);
-}
-
-.album-jump-links a {
-  color: var(--ink);
-  font-size: 0.85rem;
-  font-weight: 650;
-  text-decoration-color: var(--line);
-  text-underline-offset: 6px;
-}
-
-.album-jump-links a:hover {
-  color: var(--red);
-  text-decoration-color: currentColor;
-}
-
 .album-chapter {
   scroll-margin-top: 32px;
 }
@@ -204,7 +184,7 @@
 
 .album-diagnostics {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: minmax(260px, 0.65fr) minmax(0, 1.35fr);
   align-items: start;
   gap: clamp(32px, 5vw, 72px);
   margin-top: clamp(80px, 10vw, 144px);
@@ -230,30 +210,11 @@
 }
 
 .album-photo-diagnostic .album-photo-link {
-  aspect-ratio: 3 / 4;
-  padding: 14px 14px 54px;
-  background: var(--sage);
+  aspect-ratio: 1;
 }
 
 .album-photo-diagnostic img {
-  object-fit: contain;
-}
-
-.album-photo-diagnostic .album-photo-expand {
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
-  justify-content: space-between;
-  background: var(--paper);
-}
-
-.album-photo-diagnostic figcaption {
-  gap: 12px;
-  padding-top: 16px;
-}
-
-.album-photo-diagnostic h3 {
-  font-size: 1.12rem;
+  object-fit: cover;
 }
 
 .album-ending {
@@ -397,11 +358,6 @@
     max-width: 540px;
   }
 
-  .album-photo-diagnostic .album-photo-link {
-    height: 300px;
-    aspect-ratio: auto;
-  }
-
   .album-ending {
     align-items: flex-start;
     flex-direction: column;
@@ -445,27 +401,8 @@
   }
 
   .album-diagnostic-grid {
+    grid-template-columns: 1fr;
     gap: 16px;
-  }
-
-  .album-photo-diagnostic .album-photo-link {
-    height: 240px;
-    padding: 10px 10px 50px;
-  }
-
-  .album-photo-diagnostic figcaption {
-    display: block;
-  }
-
-  .album-photo-diagnostic .album-photo-number {
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  .album-photo-diagnostic .album-photo-expand {
-    gap: 6px;
-    padding-inline: 10px;
-    font-size: 0.65rem;
   }
 
   .album-lightbox {

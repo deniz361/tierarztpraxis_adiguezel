@@ -1653,7 +1653,7 @@ svg {
   }
 
   body {
-    padding-bottom: 68px;
+    padding-bottom: 0;
     font-size: 16px;
   }
 
@@ -2081,17 +2081,32 @@ svg {
   .footer-main {
     grid-template-columns: 1fr;
     gap: 26px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footer-brand {
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .footer-brand img {
+    width: 54px;
+    height: 54px;
   }
 
   .footer-links {
     grid-column: auto;
+    justify-content: center;
   }
 
   .footer-bottom {
     min-height: 86px;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
   }
 
   .legal-content {

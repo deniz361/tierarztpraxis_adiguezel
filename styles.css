@@ -1989,8 +1989,18 @@ svg {
   }
 
   .hero-actions {
-    align-items: flex-start;
-    flex-direction: column;
+    gap: 12px;
+    justify-content: space-evenly;
+  }
+
+  .hero-actions > a {
+    gap: 7px;
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+
+  .hero-actions .button {
+    padding-inline: 14px;
   }
 
   .hero-media,
